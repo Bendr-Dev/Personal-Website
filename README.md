@@ -1,30 +1,23 @@
-A personal website.
+A personal website to display my portfolio.
 
 ---
 
-# svelte app
+# Versions
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
 ```
-
-_Note that you will need to have [Node.js](https://nodejs.org) installed._
+Node: 14.11.0
+NPM: 6.14.8
+Svelte: 3.25.1
+```
 
 ## Get started
 
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd `/project-folder-dest`
 npm install
 ```
-
-...then start [Rollup](https://rollupjs.org):
 
 ```bash
 npm run dev
