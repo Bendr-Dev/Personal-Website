@@ -4,12 +4,14 @@
   import Experience from "./Experience.svelte";
   import Skill from "./Skill.svelte";
   import Contact from "./Contact.svelte";
+  import Intro from "./Intro.svelte";
 </script>
 
 <style>
 </style>
 
 <Nav />
+<Intro />
 <About />
 <Experience />
 <Skill />

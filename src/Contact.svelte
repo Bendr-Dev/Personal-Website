@@ -6,7 +6,7 @@
     display: flex;
     width: 100%;
     height: 50vh;
-    background-color: var(--default-primary-color);
+    background-color: var(--dark-primary-color);
     align-items: center;
   }
 </style>
