@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 7rem;
+    height: 5rem;
     position: fixed;
   }
 
