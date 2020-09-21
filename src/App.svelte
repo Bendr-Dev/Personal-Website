@@ -1,25 +1,18 @@
 <script lang="ts">
+  import Nav from "./Nav.svelte";
+  import About from "./About.svelte";
+  import Experience from "./Experience.svelte";
+  import Skill from "./Skill.svelte";
+  import Contact from "./Contact.svelte";
+  import Intro from "./Intro.svelte";
 </script>
 
 <style>
-  main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    color: var(--accent-color);
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  }
 </style>
 
-<main>
-  <h1>Soon to be...</h1>
-</main>
+<Nav />
+<Intro />
+<About />
+<Experience />
+<Skill />
+<Contact />
