@@ -7,9 +7,6 @@
 </script>
 
 <style>
-  div {
-    height: 150vh;
-  }
 </style>
 
 <Nav />
