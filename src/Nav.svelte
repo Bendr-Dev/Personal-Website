@@ -2,77 +2,70 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    const aboutSection: HTMLElement = document.getElementById("about");
-    const experienceSection = document.getElementById("experience");
-    const skillSection = document.getElementById("skill");
-    const contactSection = document.getElementById("contact");
+    const aboutSection: HTMLElement = document.getElementById("aboutLink");
+    const experienceSection: HTMLElement = document.getElementById(
+      "experienceLink"
+    );
+    const skillSection: HTMLElement = document.getElementById("skillLink");
+    const contactSection: HTMLElement = document.getElementById("contactLink");
 
     const linkMap: { [key: string]: HTMLElement } = {
-      about: aboutSection,
-      experience: experienceSection,
-      skill: skillSection,
-      contact: contactSection,
+      aboutLink: aboutSection,
+      experienceLink: experienceSection,
+      skillLink: skillSection,
+      contactLink: contactSection,
+    };
+
+    const removeOtherStyles = (name: string): void => {
+      for (const link in linkMap) {
+        if (link !== name) {
+          linkMap[link].style.color = "";
+        }
+      }
     };
 
     for (const link in linkMap) {
       linkMap[link].addEventListener("click", () => {
-        // toggle link
+        linkMap[link].style.color = "var(--accent-color)";
+        removeOtherStyles(link);
       });
     }
-
-    aboutSection.addEventListener("click", () => {
-      aboutSection.style.color = "var(--accent-color)";
-      experienceSection.style.color = "";
-      skillSection.style.color = "";
-      contactSection.style.color = "";
-    });
-
-    experienceSection.addEventListener("click", () => {
-      experienceSection.style.color = "var(--accent-color)";
-      aboutSection.style.color = "";
-      skillSection.style.color = "";
-      contactSection.style.color = "";
-    });
-
-    skillSection.addEventListener("click", () => {
-      skillSection.style.color = "var(--accent-color)";
-      aboutSection.style.color = "";
-      experienceSection.style.color = "";
-      contactSection.style.color = "";
-    });
-
-    contactSection.addEventListener("click", () => {
-      contactSection.style.color = "var(--accent-color)";
-      aboutSection.style.color = "";
-      skillSection.style.color = "";
-      experienceSection.style.color = "";
-    });
   });
 </script>
 
 <style>
   nav {
+    width: 100%;
+    float: left;
     background-color: var(--default-primary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 7rem;
   }
 
   h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-left: 2rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
     color: var(--text-icons);
-    padding: 1rem;
-    font-size: 32px;
   }
 
   .list {
     width: 30%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .item {
     align-self: center;
-    margin: 2rem;
+    margin: 1rem;
   }
 
   .item > a {
@@ -87,17 +80,44 @@
   .item > a:active {
     color: var(--accent-color);
   }
+
+  @media (max-width: 1024px) {
+    div.list {
+      display: none;
+    }
+
+    div.title {
+      width: 100%;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-left: 0rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    div > h1 {
+      font-size: 32px;
+    }
+
+    nav {
+      height: 4rem;
+    }
+  }
 </style>
 
 <nav>
-  <h1>Brandon Endres</h1>
+  <div class="title">
+    <h1>Brandon Endres</h1>
+  </div>
   <!-- Link list -->
   <div class="list">
-    <div class="item"><a id="about" href="#about">About</a></div>
+    <div class="item"><a id="aboutLink" href="#about">About</a></div>
     <div class="item">
-      <a id="experience" href="#experiences">Experiences</a>
+      <a id="experienceLink" href="#experiences">Experiences</a>
     </div>
-    <div class="item"><a id="skill" href="#skills">Skills</a></div>
-    <div class="item"><a id="contact" href="#contact">Contact</a></div>
+    <div class="item"><a id="skillLink" href="#skills">Skills</a></div>
+    <div class="item"><a id="contactLink" href="#contact">Contact</a></div>
   </div>
 </nav>
