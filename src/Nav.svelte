@@ -1,7 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  // Lifecycle hook
   onMount(() => {
+    // HTML Elements
     const aboutSection: HTMLElement = document.getElementById("aboutLink");
     const experienceSection: HTMLElement = document.getElementById(
       "experienceLink"
@@ -9,6 +11,7 @@
     const skillSection: HTMLElement = document.getElementById("skillLink");
     const contactSection: HTMLElement = document.getElementById("contactLink");
 
+    // Object that holds name/HTML element for each section
     const linkMap: { [key: string]: HTMLElement } = {
       aboutLink: aboutSection,
       experienceLink: experienceSection,
@@ -16,6 +19,12 @@
       contactLink: contactSection,
     };
 
+    /**
+     * Loops through object and removes styling from non-matching
+     * names.
+     *
+     * @param name [string]: Name of key to keep styling.
+     */
     const removeOtherStyles = (name: string): void => {
       for (const link in linkMap) {
         if (link !== name) {
@@ -24,6 +33,7 @@
       }
     };
 
+    // Watches for click, then applies appropiate styling
     for (const link in linkMap) {
       linkMap[link].addEventListener("click", () => {
         linkMap[link].style.color = "var(--accent-color)";
@@ -36,12 +46,11 @@
 <style>
   nav {
     width: 100%;
-    float: left;
     background-color: var(--default-primary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 7rem;
+    height: 5rem;
     position: fixed;
   }
 
@@ -49,6 +58,7 @@
     text-align: center;
     font-size: 42px;
     margin-left: 2rem;
+    font-weight: 300;
   }
 
   .title {
@@ -109,10 +119,11 @@
 </style>
 
 <nav>
+  <!-- Title -->
   <div class="title">
     <h1>Brandon Endres</h1>
   </div>
-  <!-- Link list -->
+  <!-- Navigation list -->
   <div class="list">
     <div class="item"><a id="aboutLink" href="#about">About</a></div>
     <div class="item">
