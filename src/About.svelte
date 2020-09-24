@@ -42,6 +42,7 @@
 
   p {
     margin-top: 0;
+    line-height: 1.6;
   }
 
   .photo {
@@ -110,6 +111,12 @@
         <p>
           I'm currently studying computer engineering at Florida Polytechnic
           University, with a concentration of machine intelligence.
+        </p>
+
+        <p>
+          I've gathered 6+ months of professional experience interning for a 
+          $5B+ revenue company developing applications for different areas of 
+          the business.
         </p>
       </div>
     </div>
