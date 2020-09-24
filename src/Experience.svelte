@@ -5,10 +5,25 @@
   .experience {
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: auto;
     background-color: var(--light-primary-color);
-    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  .title {
+    color: var(--dark-primary-color);
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .title h2 {
+    font-weight: 100;
   }
 </style>
 
-<div class="experience" id="experiences">This is the Experience section</div>
+<section class="experience" id="experiences">
+  <div class="title">
+    <h2>Experiences ...</h2>
+  </div>
+</section>
