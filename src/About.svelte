@@ -45,7 +45,7 @@
     line-height: 1.6;
   }
 
-  .photo {
+  img {
     border-radius: 50%;
     border: 3px solid var(--accent-color);
     width: 210px;
@@ -83,7 +83,7 @@
       padding: 1rem 2rem;
     }
 
-    .photo {
+    img {
       border-radius: 50%;
       border: 3px solid var(--accent-color);
       min-width: 210px;
@@ -114,15 +114,15 @@
         </p>
 
         <p>
-          I've gathered 6+ months of professional experience interning for a 
-          $5B+ revenue company developing applications for different areas of 
+          I've gathered 6+ months of professional experience interning for a
+          $5B+ revenue company developing applications for different areas of
           the business.
         </p>
       </div>
     </div>
     <div>
       <div class="center-block" />
-      <img class="photo" src="../../Endres.jpg" alt="My face (not loading)" />
+      <img src="../../Endres.jpg" alt="My face (not loading)" />
     </div>
     <div>
       <div class="right-block">
@@ -135,10 +135,10 @@
 
         <p>
           I enjoy video games, and I have a passion for Rocket League. I've
-          played Rocket League at a collegiate level since my freshman year,
-          I've won prizing and even got the opportunity to travel to LSU and
-          UNCC to play in LAN tournaments! I've played in countless Rocket
-          League tournaments - online and local.
+          played Rocket League at a collegiate level since my freshman year, and
+          I've had so many great experiences playing in countless tournaments!
+          Some of my favorite memories are getting the chance to travel to LSU
+          and UNCC and playing in collegiate LAN tournaments.
         </p>
 
         <p>
