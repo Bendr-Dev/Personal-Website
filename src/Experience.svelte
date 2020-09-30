@@ -25,6 +25,12 @@
     margin: 1rem 5rem;
     display: grid;
     /* Convert to grid for responsiveness */
+    grid-template-areas:
+      "left left right right"
+      "left left right right"
+      "left left right right"
+      "left left right right";
+    column-gap: 10rem;
   }
 
   .education-header {
@@ -39,6 +45,7 @@
     font-weight: 100;
     color: var(--primary-text-color);
     font-size: 16px;
+    text-align: center;
   }
 
   .education-header h4 {
@@ -63,7 +70,7 @@
   .left-block {
     display: flex;
     flex-direction: column;
-    min-width: 50%;
+    grid-area: left;
   }
 
   .item {
@@ -74,21 +81,60 @@
   .right-block {
     line-height: 1.6;
     font-weight: 200;
+    grid-area: right;
   }
 
   .text-box {
     height: 432px;
     max-height: 432px;
-    overflow-y: hidden;
   }
 
-  @media (max-width: 799px) {
-    svg line {
-      visibility: hidden;
+  @media (max-width: 1239px) {
+    .right-block {
+      display: none;
+    }
+    .content {
+      margin: 0;
+      margin-top: 5rem;
+      column-gap: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     .item {
+      width: 100%;
+      display: flex;
       flex-direction: column;
+    }
+
+    .education-header * {
+      width: 100%;
+    }
+
+    .education-header h4 {
+      font-size: 14px;
+    }
+
+    .education-header h5,
+    .education-header span {
+      font-size: 12px;
+    }
+    .education-header {
+      margin: 0 0.5rem;
+    }
+
+    svg {
+      margin: auto;
+    }
+
+    svg line {
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: 1568px) {
+    ul {
+      display: none;
     }
   }
 </style>
@@ -190,6 +236,22 @@
           no-one was an eye-opener. The family culture that embraces Scotts
           combined with the amazing people working there was comforting.
         </p>
+        <ul>
+          <li>
+            Worked as front-end application developer to create quality
+            assurance platform for $5B+ Revenue company supporting 45 production
+            facilities.
+          </li>
+          <li>
+            Implemented UI automation process to simplify gathering sales data
+            for Canadian facilities.
+          </li>
+          <li>
+            Interacted with business partners in order to gather requirements to
+            efficiently create solutions for these business processes.
+          </li>
+          <li>Technologies used: Ionic, Angular, Firebase, and JS/HTML/CSS.</li>
+        </ul>
       </div>
       <div class="text-box">
         <p>
@@ -207,11 +269,26 @@
           team and my mentor here, I was still able to learn so much and have so
           much fun in these unique circumstances.
         </p>
+        <ul>
+          <li>
+            Worked as full-stack developer on resource management and data
+            collection application for on premise R&D, as well as 20+ college
+            campuses.
+          </li>
+          <li>
+            Developed side-by-side with full-time associates on sales
+            application that processes over $400 million in sales every year.
+          </li>
+          <li>
+            Technologies used include: Angular, Flask, Google Cloud Platform,
+            Electron, and JS/HTML/CSS.
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Closing title -->
-    <div class="title">
-      <h2>... To Be Continued!</h2>
-    </div>
+  </div>
+  <!-- Closing title -->
+  <div class="title">
+    <h2>... To Be Continued!</h2>
   </div>
 </section>
