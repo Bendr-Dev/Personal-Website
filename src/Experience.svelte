@@ -27,12 +27,6 @@
     /* Convert to grid for responsiveness */
   }
 
-  article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .education-header {
     margin-left: 1.5rem;
     display: flex;
