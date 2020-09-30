@@ -78,7 +78,6 @@
   }
 
   .right-block {
-    margin-left: 3rem;
     line-height: 1.6;
     font-weight: 200;
   }
@@ -108,113 +107,114 @@
   <!-- Content of section -->
   <div class="content">
     <!-- Roadmap style following all my educational and professional experiences to date -->
-    <article>
-      <!-- Left hand side has visuals and titles of each work-place/school I've been -->
-      <div class="left-block">
-        <div class="item">
-          <img src="../../Florida-Poly-Icon.jpg" alt="Florida Poly" />
-          <div class="education-header">
-            <h4>Bachelor of Science - Computer Engineering</h4>
-            <h5>
-              Florida Polytechnic University, <span>expected May 2021</span>
-            </h5>
-            <h5>Lakeland, Florida</h5>
-          </div>
-        </div>
-        <svg height="216" width="216">
-          <line
-            x1="108"
-            y1="216"
-            x2="108"
-            y2="0"
-            style="stroke:rgb(69,90,100);stroke-width:3px" />
-        </svg>
-        <div class="item">
-          <img src="../../scotts.jpg" alt="Scotts-MiracleGro" />
-          <div class="education-header">
-            <h4>Cloud Applications Developer Intern</h4>
-            <h5>
-              The Scotts Miracle-Gro Company, <span>May - August 2019</span>
-            </h5>
-            <h5>Marysville, Ohio</h5>
-          </div>
-        </div>
-        <svg height="216" width="216">
-          <line
-            x1="108"
-            y1="216"
-            x2="108"
-            y2="0"
-            style="stroke:rgb(69,90,100);stroke-width:3px" />
-        </svg>
-        <div class="item">
-          <img src="../../scotts.jpg" alt="Scotts-MiracleGro" />
-          <div class="education-header">
-            <h4>Cloud Applications Developer Intern</h4>
-            <h5>
-              The Scotts Miracle-Gro Company, <span>May - August 2020</span>
-            </h5>
-            <h5>Marysville, Ohio</h5>
-          </div>
-        </div>
-        <svg height="216" width="216">
-          <line
-            x1="108"
-            y1="216"
-            x2="108"
-            y2="0"
-            style="stroke:rgb(69,90,100);stroke-width:3px" />
-        </svg>
-      </div>
-      <!-- Right hand side goes into more details about each experience -->
-      <div class="right-block">
-        <div class="text-box">
-          <p>
-            Attending Florida Polytechnic University has been an amazing
-            experience. It has allowed me to meet a lot of diverse people who
-            I've come close with. Florida Poly's small close community has been
-            perfect for me. It allowed me to express my passion for Rocket
-            League and I was able to meet similiar peers who also expressed that
-            same passion. Most importantly Florida Poly guided me to finding
-            what I love doing most, thanks to my peers and the amazing faculty
-            staff I've met here. They took what I love studying and provided me
-            with all the resources to help me succeed and grow.
-          </p>
-        </div>
-        <div class="text-box">
-          <p>
-            My first internship was at the Scotts Miracle-Gro Company. The
-            circumstances surrounding my presence there was a unique one. I was
-            one of the four cloud application interns selected to work on an
-            internal application. I met my manager through Rocket League and
-            when he saw my passion for programming he gave me a shot interning
-            for him. It was a challenging-but very rewarding internship, as it
-            was an awakening for myself. Being thousands of miles from home for
-            three months and living in a place I've never been before where I
-            knew no-one was an eye-opener. The family culture that embraces
-            Scotts combined with the amazing people working there was
-            comforting.
-          </p>
-        </div>
-        <div class="text-box">
-          <p>
-            After my first internship at Scotts, I was offered a spot for next
-            summer. Once again, my circumstances being here was a unique one. I
-            had actually lined up another internship at a software development
-            company locally in Tampa, Florida. However, due to COVID-19 they
-            closed all their internship positions. Scotts did not close their
-            internship slots but made them remote. Being able to come back
-            (remotely) was a blessing in disguise. I was the only cloud
-            application intern so I got to work directly with full-time
-            associates on another internal application! As a developer it was at
-            this point I felt I was making great strides in not only learning,
-            but applying skills I had been rapidly attaining. Even with being
-            far away from the team and my mentor here, I was still able to learn
-            so much and have so much fun in these unique circumstances.
-          </p>
+    <!-- Left hand side has visuals and titles of each work-place/school I've been -->
+    <div class="left-block">
+      <div class="item">
+        <img src="../../Florida-Poly-Icon.jpg" alt="Florida Poly" />
+        <div class="education-header">
+          <h4>Bachelor of Science - Computer Engineering</h4>
+          <h5>
+            Florida Polytechnic University, <span>expected May 2021</span>
+          </h5>
+          <h5>Lakeland, Florida</h5>
         </div>
       </div>
-    </article>
+      <svg height="216" width="216">
+        <line
+          x1="108"
+          y1="216"
+          x2="108"
+          y2="0"
+          style="stroke:rgb(69,90,100);stroke-width:3px" />
+      </svg>
+      <div class="item">
+        <img
+          src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
+          alt="Scotts-MiracleGro" />
+        <div class="education-header">
+          <h4>Cloud Applications Developer Intern</h4>
+          <h5>
+            The Scotts Miracle-Gro Company, <span>May - August 2019</span>
+          </h5>
+          <h5>Marysville, Ohio</h5>
+        </div>
+      </div>
+      <svg height="216" width="216">
+        <line
+          x1="108"
+          y1="216"
+          x2="108"
+          y2="0"
+          style="stroke:rgb(69,90,100);stroke-width:3px" />
+      </svg>
+      <div class="item">
+        <img
+          src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
+          alt="Scotts-MiracleGro" />
+        <div class="education-header">
+          <h4>Cloud Applications Developer Intern</h4>
+          <h5>
+            The Scotts Miracle-Gro Company, <span>May - August 2020</span>
+          </h5>
+          <h5>Marysville, Ohio</h5>
+        </div>
+      </div>
+      <svg height="216" width="216">
+        <line
+          x1="108"
+          y1="216"
+          x2="108"
+          y2="0"
+          style="stroke:rgb(69,90,100);stroke-width:3px" />
+      </svg>
+    </div>
+    <!-- Right hand side goes into more details about each experience -->
+    <div class="right-block">
+      <div class="text-box">
+        <p>
+          Attending Florida Polytechnic University has been an amazing
+          experience. It has allowed me to meet a lot of diverse people who I've
+          come close with. Florida Poly's small close community has been perfect
+          for me. It allowed me to express my passion for Rocket League and I
+          was able to meet similiar peers who also expressed that same passion.
+          Most importantly Florida Poly guided me to finding what I love doing
+          most, thanks to my peers and the amazing faculty staff I've met here.
+          They took what I love studying and provided me with all the resources
+          to help me succeed and grow.
+        </p>
+      </div>
+      <div class="text-box">
+        <p>
+          My first internship was at the Scotts Miracle-Gro Company. The
+          circumstances surrounding my presence there was a unique one. I was
+          one of the four cloud application interns selected to work on an
+          internal application. I met my manager through Rocket League and when
+          he saw my passion for programming he gave me a shot interning for him.
+          It was a challenging-but very rewarding internship, as it was an
+          awakening for myself. Being thousands of miles from home for three
+          months and living in a place I've never been before where I knew
+          no-one was an eye-opener. The family culture that embraces Scotts
+          combined with the amazing people working there was comforting.
+        </p>
+      </div>
+      <div class="text-box">
+        <p>
+          After my first internship at Scotts, I was offered a spot for next
+          summer. Once again, my circumstances being here was a unique one. I
+          had actually lined up another internship at a software development
+          company locally in Tampa, Florida. However, due to COVID-19 they
+          closed all their internship positions. Scotts did not close their
+          internship slots but made them remote. Being able to come back
+          (remotely) was a blessing in disguise. I was the only cloud
+          application intern so I got to work directly with full-time associates
+          on another internal application! As a developer it was at this point I
+          felt I was making great strides in not only learning, but applying
+          skills I had been rapidly attaining. Even with being far away from the
+          team and my mentor here, I was still able to learn so much and have so
+          much fun in these unique circumstances.
+        </p>
+      </div>
+    </div>
     <!-- Closing title -->
     <div class="title">
       <h2>... To Be Continued!</h2>
