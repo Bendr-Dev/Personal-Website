@@ -234,7 +234,8 @@
           awakening for myself. Being thousands of miles from home for three
           months and living in a place I've never been before where I knew
           no-one was an eye-opener. The family culture that embraces Scotts
-          combined with the amazing people working there was comforting.
+          combined with the amazing people working there was comforting and made
+          me feel like I belonged there.
         </p>
         <ul>
           <li>
