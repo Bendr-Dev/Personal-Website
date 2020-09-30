@@ -43,6 +43,7 @@
   p {
     margin-top: 0;
     line-height: 1.6;
+    font-weight: 200;
   }
 
   img {
@@ -58,10 +59,6 @@
   }
 
   @media (max-width: 799px) {
-    .about {
-      height: auto;
-    }
-
     .content {
       display: flex;
       flex-direction: column;
@@ -76,6 +73,8 @@
 
     p {
       margin-top: 1rem;
+      line-height: 1.6;
+      font-weight: 200;
     }
 
     .left-block,
