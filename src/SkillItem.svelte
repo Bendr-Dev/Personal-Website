@@ -4,9 +4,10 @@
   import { cubicOut } from "svelte/easing";
 
   const rating = tweened(0, {
-    duration: 400,
+    duration: 1500,
     easing: cubicOut,
   });
+
   rating.set(ratingValue / 100);
 </script>
 
@@ -16,8 +17,8 @@
     appearance: none;
 
     display: block;
-    height: 1rem;
-
+    height: 1.5rem;
+    width: 100%;
     border: none;
 
     color: var(--accent-color);
@@ -25,7 +26,7 @@
 
   progress::-webkit-progress-bar {
     border-radius: 5px;
-    background-color: var(--divider-color);
+    background-color: var(--light-primary-color);
   }
 
   progress::-webkit-progress-value {
@@ -35,7 +36,7 @@
 
   progress::-moz-progress-bar {
     border-radius: 5px;
-    background-color: var(--divider-color);
+    background-color: var(--light-primary-color);
   }
 
   progress::-moz-progress-value {

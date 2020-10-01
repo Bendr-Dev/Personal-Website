@@ -33,14 +33,14 @@
     column-gap: 10rem;
   }
 
-  .education-header {
+  .title-header {
     margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .education-header * {
+  .title-header * {
     margin: 0.5rem 0;
     font-weight: 100;
     color: var(--primary-text-color);
@@ -48,12 +48,12 @@
     text-align: center;
   }
 
-  .education-header h4 {
+  .title-header h4 {
     font-weight: 600;
     font-size: 18px;
   }
 
-  .education-header h5 > span {
+  .title-header h5 > span {
     font-style: italic;
   }
 
@@ -85,11 +85,11 @@
   }
 
   .text-box {
-    height: 432px;
-    max-height: 432px;
+    height: 540px;
+    max-height: 540px;
   }
 
-  @media (max-width: 1239px) {
+  @media (max-width: 1308px) {
     .right-block {
       display: none;
     }
@@ -105,26 +105,28 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      margin: 1rem 0;
     }
 
-    .education-header * {
+    .title-header * {
       width: 100%;
     }
 
-    .education-header h4 {
+    .title-header h4 {
       font-size: 14px;
     }
 
-    .education-header h5,
-    .education-header span {
+    .title-header h5,
+    .title-header span {
       font-size: 12px;
     }
-    .education-header {
+    .title-header {
       margin: 0 0.5rem;
     }
 
     svg {
       margin: auto;
+      display: none;
     }
 
     svg line {
@@ -142,7 +144,7 @@
 <section class="experience" id="experiences">
   <!-- Title of section -->
   <div class="title">
-    <h2>Experiences ...</h2>
+    <h2>Experiences</h2>
   </div>
   <!-- Content of section -->
   <div class="content">
@@ -151,7 +153,7 @@
     <div class="left-block">
       <div class="item">
         <img src="../../Florida-Poly-Icon.jpg" alt="Florida Poly" />
-        <div class="education-header">
+        <div class="title-header">
           <h4>Bachelor of Science - Computer Engineering</h4>
           <h5>
             Florida Polytechnic University, <span>expected May 2021</span>
@@ -159,10 +161,10 @@
           <h5>Lakeland, Florida</h5>
         </div>
       </div>
-      <svg height="216" width="216">
+      <svg height="324" width="216">
         <line
           x1="108"
-          y1="216"
+          y1="324"
           x2="108"
           y2="0"
           style="stroke:rgb(69,90,100);stroke-width:3px" />
@@ -171,7 +173,7 @@
         <img
           src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
           alt="Scotts-MiracleGro" />
-        <div class="education-header">
+        <div class="title-header">
           <h4>Cloud Applications Developer Intern</h4>
           <h5>
             The Scotts Miracle-Gro Company, <span>May - August 2019</span>
@@ -179,10 +181,10 @@
           <h5>Marysville, Ohio</h5>
         </div>
       </div>
-      <svg height="216" width="216">
+      <svg height="324" width="216">
         <line
           x1="108"
-          y1="216"
+          y1="324"
           x2="108"
           y2="0"
           style="stroke:rgb(69,90,100);stroke-width:3px" />
@@ -191,7 +193,7 @@
         <img
           src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
           alt="Scotts-MiracleGro" />
-        <div class="education-header">
+        <div class="title-header">
           <h4>Cloud Applications Developer Intern</h4>
           <h5>
             The Scotts Miracle-Gro Company, <span>May - August 2020</span>
@@ -199,10 +201,10 @@
           <h5>Marysville, Ohio</h5>
         </div>
       </div>
-      <svg height="216" width="216">
+      <svg height="324" width="216">
         <line
           x1="108"
-          y1="216"
+          y1="324"
           x2="108"
           y2="0"
           style="stroke:rgb(69,90,100);stroke-width:3px" />
@@ -229,8 +231,8 @@
           circumstances surrounding my presence there was a unique one. I was
           one of the four cloud application interns selected to work on an
           internal application. I met my manager through Rocket League and when
-          he saw my passion for programming he gave me a shot interning for him.
-          It was a challenging-but very rewarding internship, as it was an
+          he saw my passion for programming he gave me a shot interning for his
+          team. It was a challenging-but very rewarding internship, as it was an
           awakening for myself. Being thousands of miles from home for three
           months and living in a place I've never been before where I knew
           no-one was an eye-opener. The family culture that embraces Scotts
@@ -287,9 +289,5 @@
         </ul>
       </div>
     </div>
-  </div>
-  <!-- Closing title -->
-  <div class="title">
-    <h2>... To Be Continued!</h2>
   </div>
 </section>
