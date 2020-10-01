@@ -19,7 +19,8 @@
     font-size: 32px;
   }
 
-  .title h2 {
+  .title h2,
+  h6 {
     font-weight: 100;
   }
 
@@ -43,11 +44,31 @@
     font-weight: 100;
     color: var(--primary-text-color);
   }
+
+  @media (max-width: 799px) {
+    .lSkill,
+    .rSkill {
+      margin: 0 1.5rem;
+    }
+
+    .skill {
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 </style>
 
 <section id="skills">
   <div class="title">
     <h2>Skills</h2>
+    <h6>
+      Languages, Frameworks, Tools and Technologies I've become comfortable with
+    </h6>
   </div>
   <div class="content">
     <div class="lSkill">
@@ -68,23 +89,23 @@
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Python</label>
+        <label>TypeScript</label>
+        <SkillItem ratingValue={80} />
+      </div>
+      <div class="skill">
+        <!-- svelte-ignore a11y-label-has-associated-control -->
+        <label>Node</label>
         <SkillItem ratingValue={70} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Java</label>
+        <label>Express</label>
         <SkillItem ratingValue={70} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>C</label>
-        <SkillItem ratingValue={70} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>C++</label>
-        <SkillItem ratingValue={70} />
+        <label>GitHub</label>
+        <SkillItem ratingValue={80} />
       </div>
     </div>
     <div class="rSkill">
@@ -110,23 +131,18 @@
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>GitHub</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Node.js</label>
-        <SkillItem ratingValue={70} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Flask</label>
         <SkillItem ratingValue={70} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>VS Code</label>
-        <SkillItem ratingValue={90} />
+        <label>Python</label>
+        <SkillItem ratingValue={70} />
+      </div>
+      <div class="skill">
+        <!-- svelte-ignore a11y-label-has-associated-control -->
+        <label>Java</label>
+        <SkillItem ratingValue={70} />
       </div>
     </div>
   </div>
