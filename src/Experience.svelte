@@ -113,6 +113,7 @@
     }
 
     .title-header h4 {
+      margin-top: 1rem;
       font-size: 14px;
     }
 
@@ -121,7 +122,7 @@
       font-size: 12px;
     }
     .title-header {
-      margin: 0 0.5rem;
+      margin: 0 1rem;
     }
 
     svg {
