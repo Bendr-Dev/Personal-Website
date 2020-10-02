@@ -1,16 +1,17 @@
 <script lang="ts">
-  import { faTimes } from "@fortawesome/fontawesome-free";
+  import "@fortawesome/fontawesome-free/js/all.js";
 </script>
 
 <style>
   .contact {
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: auto;
     background-color: var(--default-primary-color);
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
   }
 
   .title {
@@ -49,7 +50,7 @@
     text-decoration: none;
     color: var(--text-icons);
     font-weight: 100;
-    font-size: 24px;
+    font-size: 32px;
     position: relative;
   }
 
@@ -70,6 +71,18 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  @media (max-width: 412px) {
+    .content div {
+      border-bottom: 2px solid var(--accent-color);
+    }
+    span {
+      font-size: 18px;
+    }
+    a {
+      font-size: 24px;
+    }
+  }
 </style>
 
 <section class="contact" id="contact">
@@ -77,13 +90,16 @@
     <h2>Contact</h2>
   </div>
   <div class="content">
-    <div><span>Phone: (813) 399-0434</span></div>
-    <div><span>Email: 17bendres@gmail.com</span></div>
     <div>
-      <a
-        href="https://www.linkedin.com/in/brandon-endres/"
-        target="_blank">LinkedIn Profile</a>
+      <span><i class="fas fa-envelope-square" /> 17bendres@gmail.com</span>
     </div>
-    <div><a href="https://github.com/Bendr-Dev">GitHub Account</a></div>
+    <div>
+      <a href="https://www.linkedin.com/in/brandon-endres/" target="_blank">
+        <i class="fab fa-linkedin" /> LinkedIn Profile</a>
+    </div>
+    <div>
+      <a href="https://github.com/Bendr-Dev" target="_blank"><i
+          class="fab fa-github-square" /> GitHub Account</a>
+    </div>
   </div>
 </section>
