@@ -153,7 +153,7 @@
     <!-- Left hand side has visuals and titles of each work-place/school I've been -->
     <div class="left-block">
       <div class="item">
-        <img src="../../Florida-Poly-Icon.jpg" alt="Florida Poly" />
+        <img src="img/fl-poly.jpg" alt="Florida Poly" />
         <div class="title-header">
           <h4>Bachelor of Science - Computer Engineering</h4>
           <h5>
@@ -171,9 +171,7 @@
           style="stroke:rgb(69,90,100);stroke-width:3px" />
       </svg>
       <div class="item">
-        <img
-          src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
-          alt="Scotts-MiracleGro" />
+        <img src="img/smg-logo.jpg" alt="Scotts-MiracleGro" />
         <div class="title-header">
           <h4>Cloud Applications Developer Intern</h4>
           <h5>
@@ -191,9 +189,7 @@
           style="stroke:rgb(69,90,100);stroke-width:3px" />
       </svg>
       <div class="item">
-        <img
-          src="../../Scotts-Miracle-Gro-2014-Logo.jpg"
-          alt="Scotts-MiracleGro" />
+        <img src="img/smg-logo.jpg" alt="Scotts-MiracleGro" />
         <div class="title-header">
           <h4>Cloud Applications Developer Intern</h4>
           <h5>

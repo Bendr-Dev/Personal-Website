@@ -50,7 +50,7 @@
     text-decoration: none;
     color: var(--text-icons);
     font-weight: 100;
-    font-size: 32px;
+    font-size: 28px;
     position: relative;
   }
 

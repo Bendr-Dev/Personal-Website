@@ -122,7 +122,7 @@
     </div>
     <div>
       <div class="center-block" />
-      <img src="../../Endres.jpg" alt="My face (not loading)" />
+      <img src="img/bendres.jpg" alt="My face" />
     </div>
     <div>
       <div class="right-block">
