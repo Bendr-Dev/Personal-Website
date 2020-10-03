@@ -47,7 +47,7 @@
   nav {
     width: 100%;
     background-color: var(--default-primary-color);
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     height: 5rem;
