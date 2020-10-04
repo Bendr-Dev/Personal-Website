@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Nav from "./Nav.svelte";
   import About from "./About.svelte";
   import Experience from "./Experience.svelte";
   import Skill from "./Skill.svelte";
@@ -10,7 +9,6 @@
 <style>
 </style>
 
-<Nav />
 <Intro />
 <About />
 <Experience />

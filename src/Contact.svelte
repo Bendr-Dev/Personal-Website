@@ -7,7 +7,11 @@
     display: flex;
     width: 100%;
     height: auto;
-    background-color: var(--default-primary-color);
+    background-image: linear-gradient(
+      -180deg,
+      var(--default-primary-color) 0%,
+      var(--dark-primary-color) 100%
+    );
     align-items: center;
     flex-direction: column;
     padding-top: 5rem;
