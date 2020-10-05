@@ -98,11 +98,14 @@
       <span><i class="fas fa-envelope-square" /> 17bendres@gmail.com</span>
     </div>
     <div>
-      <a href="https://www.linkedin.com/in/brandon-endres/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/brandon-endres/"
+        target="_blank"
+        rel="noopener">
         <i class="fab fa-linkedin" /> LinkedIn Profile</a>
     </div>
     <div>
-      <a href="https://github.com/Bendr-Dev" target="_blank"><i
+      <a href="https://github.com/Bendr-Dev" target="_blank" rel="noopener"><i
           class="fab fa-github-square" /> GitHub Account</a>
     </div>
   </div>

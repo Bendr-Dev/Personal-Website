@@ -20,8 +20,13 @@
   }
 
   .title h2,
-  h6 {
+  h3 {
     font-weight: 100;
+  }
+
+  .title h3 {
+    font-size: 24px;
+    color: var(--primary-text-color);
   }
 
   .content {
@@ -56,6 +61,11 @@
       margin-bottom: 0;
     }
 
+    .title h3 {
+      font-size: 18px;
+      color: var(--primary-text-color);
+    }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -66,16 +76,16 @@
 <section id="skills">
   <div class="title">
     <h2>Skills</h2>
-    <h6>
+    <h3>
       Languages, Frameworks, Tools and Technologies I've become comfortable with
-    </h6>
+    </h3>
   </div>
   <div class="content">
     <div class="lSkill">
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>HTML</label>
-        <SkillItem ratingValue={80} />
+        <SkillItem ratingValue={90} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -85,64 +95,64 @@
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>JavaScript</label>
-        <SkillItem ratingValue={80} />
+        <SkillItem ratingValue={90} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>TypeScript</label>
-        <SkillItem ratingValue={80} />
+        <SkillItem ratingValue={90} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Node</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Express</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>GitHub</label>
-        <SkillItem ratingValue={80} />
+        <SkillItem ratingValue={90} />
       </div>
     </div>
     <div class="rSkill">
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Angular</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>React</label>
-        <SkillItem ratingValue={60} />
+        <SkillItem ratingValue={70} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Svelte</label>
-        <SkillItem ratingValue={40} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Firebase</label>
         <SkillItem ratingValue={60} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
+        <label>Firebase</label>
+        <SkillItem ratingValue={80} />
+      </div>
+      <div class="skill">
+        <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Flask</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Python</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
       <div class="skill">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label>Java</label>
-        <SkillItem ratingValue={70} />
+        <SkillItem ratingValue={80} />
       </div>
     </div>
   </div>

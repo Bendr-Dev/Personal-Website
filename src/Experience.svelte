@@ -48,12 +48,12 @@
     text-align: center;
   }
 
-  .title-header h4 {
+  .title-header h3 {
     font-weight: 600;
     font-size: 18px;
   }
 
-  .title-header h5 > span {
+  .title-header h4 > span {
     font-style: italic;
   }
 
@@ -87,6 +87,7 @@
   .text-box {
     height: 540px;
     max-height: 540px;
+    color: var(--primary-text-color);
   }
 
   @media (max-width: 1308px) {
@@ -112,12 +113,12 @@
       width: 100%;
     }
 
-    .title-header h4 {
+    .title-header h3 {
       margin-top: 1rem;
       font-size: 14px;
     }
 
-    .title-header h5,
+    .title-header h4,
     .title-header span {
       font-size: 12px;
     }
@@ -155,11 +156,11 @@
       <div class="item">
         <img src="img/fl-poly.jpg" alt="Florida Poly" />
         <div class="title-header">
-          <h4>Bachelor of Science - Computer Engineering</h4>
-          <h5>
+          <h3>Bachelor of Science - Computer Engineering</h3>
+          <h4>
             Florida Polytechnic University, <span>expected May 2021</span>
-          </h5>
-          <h5>Lakeland, Florida</h5>
+          </h4>
+          <h4>Lakeland, Florida</h4>
         </div>
       </div>
       <svg height="324" width="216">
@@ -173,11 +174,11 @@
       <div class="item">
         <img src="img/smg-logo.jpg" alt="Scotts-MiracleGro" />
         <div class="title-header">
-          <h4>Cloud Applications Developer Intern</h4>
-          <h5>
+          <h3>Cloud Applications Developer Intern</h3>
+          <h4>
             The Scotts Miracle-Gro Company, <span>May - August 2019</span>
-          </h5>
-          <h5>Marysville, Ohio</h5>
+          </h4>
+          <h4>Marysville, Ohio</h4>
         </div>
       </div>
       <svg height="324" width="216">
@@ -191,11 +192,11 @@
       <div class="item">
         <img src="img/smg-logo.jpg" alt="Scotts-MiracleGro" />
         <div class="title-header">
-          <h4>Cloud Applications Developer Intern</h4>
-          <h5>
+          <h3>Cloud Applications Developer Intern</h3>
+          <h4>
             The Scotts Miracle-Gro Company, <span>May - August 2020</span>
-          </h5>
-          <h5>Marysville, Ohio</h5>
+          </h4>
+          <h4>Marysville, Ohio</h4>
         </div>
       </div>
       <svg height="324" width="216">
