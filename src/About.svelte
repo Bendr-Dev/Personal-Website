@@ -50,10 +50,10 @@
   img {
     border-radius: 50%;
     border: 3px solid var(--accent-color);
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     text-align: center;
-    line-height: 210px;
+    line-height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,10 +86,10 @@
     img {
       border-radius: 50%;
       border: 3px solid var(--accent-color);
-      min-width: 210px;
-      min-height: 210px;
+      min-width: 200px;
+      min-height: 200px;
       text-align: center;
-      line-height: 210px;
+      line-height: 200px;
     }
   }
 </style>
