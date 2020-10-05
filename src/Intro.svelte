@@ -59,7 +59,7 @@
   } = {
     particleVelocity: 0.1,
     particleRadius: 1.2,
-    particleColor: "rgb(255, 152, 0)",
+    particleColor: "rgb(255, 87, 34)",
   };
 
   // Class for particle object
@@ -204,7 +204,7 @@
     font-size: 64px;
   }
 
-  .title h6 {
+  .title h3 {
     font-weight: 100;
     color: #ccc;
     font-size: 32px;
@@ -216,7 +216,7 @@
       font-size: 32px;
     }
 
-    .title h6 {
+    .title h3 {
       font-size: 24px;
     }
   }
@@ -231,6 +231,6 @@
     style="background-image: linear-gradient(-180deg, var(--dark-primary-color) 0%, var(--default-primary-color) 100%);" />
   <div class="title">
     <h2>- Brandon Endres -</h2>
-    <h6>Software Developer</h6>
+    <h3>Software Developer</h3>
   </div>
 </div>
