@@ -77,9 +77,6 @@
   }
 
   @media (max-width: 412px) {
-    .content div {
-      border-bottom: 2px solid var(--accent-color);
-    }
     span {
       font-size: 18px;
     }
