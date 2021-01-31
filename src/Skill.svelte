@@ -1,5 +1,4 @@
 <script lang="ts">
-  import SkillItem from "./SkillItem.svelte";
 </script>
 
 <style>
@@ -31,36 +30,54 @@
 
   .content {
     width: 100%;
-    display: grid;
-    grid-template-areas: "lSkill rSkill";
+    display: flex;
+    justify-content: space-around;
   }
 
-  .lSkill,
-  .rSkill {
-    margin: 0 3rem;
+  .skillbox {
+    width: 100%;
+    margin: 3rem;
+    border: 3px solid var(--accent-color);
+    border-radius: 5px;
+    position: relative;
   }
 
-  .skill {
-    margin: 1rem 0;
+  .skillbox > span:first-of-type {
+    position: absolute;
+    top: -12px;
+    color: var(--accent-color);
+    font-size: 22px;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    background-color: var(--text-icons);
   }
 
-  label {
-    font-size: 18px;
-    font-weight: 100;
-    color: var(--primary-text-color);
+  .skillbox div {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .skillbox div > span {
+    display: block;
+    line-height: 1.8;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1199px) {
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skillbox {
+      margin: 2rem 0;
+      width: calc(100% - 24px);
+      align-self: center;
+    }
   }
 
   @media (max-width: 799px) {
-    .lSkill,
-    .rSkill {
-      margin: 0 1.5rem;
-    }
-
-    .skill {
-      margin-top: 1rem;
-      margin-bottom: 0;
-    }
-
     .title h3 {
       font-size: 18px;
       color: var(--primary-text-color);
@@ -69,6 +86,12 @@
     .content {
       display: flex;
       flex-direction: column;
+    }
+
+    .skillbox {
+      margin: 2rem 0;
+      width: calc(100% - 24px);
+      align-self: center;
     }
   }
 </style>
@@ -81,78 +104,45 @@
     </h3>
   </div>
   <div class="content">
-    <div class="lSkill">
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>HTML</label>
-        <SkillItem ratingValue={90} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>CSS</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>JavaScript</label>
-        <SkillItem ratingValue={90} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>TypeScript</label>
-        <SkillItem ratingValue={90} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Node</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Express</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>GitHub</label>
-        <SkillItem ratingValue={90} />
+    <div class="skillbox">
+      <span>Languages</span>
+      <div>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>PHP</span>
       </div>
     </div>
-    <div class="rSkill">
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Angular</label>
-        <SkillItem ratingValue={80} />
+    <div class="skillbox">
+      <span>Frameworks</span>
+      <div>
+        <span>Angular</span>
+        <span>React</span>
+        <span>Svelte</span>
+        <span>Express</span>
+        <span>Flask</span>
       </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>React</label>
-        <SkillItem ratingValue={70} />
+    </div>
+    <div class="skillbox">
+      <span>Tools</span>
+      <div>
+        <span>Node</span>
+        <span>Git Bash</span>
+        <span>GitHub / GitLab</span>
+        <span>VS Code</span>
+        <span>IntelliJ IDEA</span>
+        <span>Postman</span>
       </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Svelte</label>
-        <SkillItem ratingValue={60} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Firebase</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Flask</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Python</label>
-        <SkillItem ratingValue={80} />
-      </div>
-      <div class="skill">
-        <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label>Java</label>
-        <SkillItem ratingValue={80} />
+    </div>
+    <div class="skillbox">
+      <span>Databases</span>
+      <div>
+        <span>MongoDB</span>
+        <span>Firebase</span>
+        <span>MySQL</span>
       </div>
     </div>
   </div>
