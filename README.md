@@ -1,4 +1,4 @@
-A personal website to display my portfolio.
+(Retired) A personal website to display my portfolio. This was my previous site, I've since created a new portfolio.
 
 ---
 
